@@ -1,0 +1,8 @@
+# for terraform
+.terraform.lock.hcl
+.terraform/
+*.zip
+/backend.tf
+
+# for macOS
+.DS_Store

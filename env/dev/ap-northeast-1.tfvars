@@ -35,15 +35,16 @@ dynamodb = {
 }
 
 tags = {
-  env   = "dev"
-  owner = "to-fmak"
+  env    = "dev"
+  region = "ap-northeast-1"
+  owner  = "to-fmak"
 }
 
 lambda_function = {
   subscriber = {
     function_name = "iot-demo-subscriber-lambda"
     handler       = "lambda_function.lambda_handler"
-    runtime       = "python3.11"
+    runtime       = "python3.9"
     memory_size   = "128"
     timeout       = "3"
     env_vars = {
@@ -54,7 +55,7 @@ lambda_function = {
   publisher = {
     function_name = "iot-demo-publisher-lambda"
     handler       = "lambda_function.lambda_handler"
-    runtime       = "python3.11"
+    runtime       = "python3.9"
     memory_size   = "128"
     timeout       = "3"
     env_vars = {

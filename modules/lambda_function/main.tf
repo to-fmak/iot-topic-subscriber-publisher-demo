@@ -21,6 +21,7 @@ resource "aws_lambda_function" "this" {
   tags = {
     Name        = var.function_name
     Environment = var.tags.env
+    Region      = var.tags.region
     Owner       = var.tags.owner
   }
 }

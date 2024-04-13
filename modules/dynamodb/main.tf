@@ -29,6 +29,7 @@ resource "aws_dynamodb_table" "this" {
   tags = {
     Name        = var.name
     Environment = var.tags.env
+    Region      = var.tags.region
     Owner       = var.tags.owner
   }
 }

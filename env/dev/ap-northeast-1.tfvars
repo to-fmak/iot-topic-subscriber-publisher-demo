@@ -73,10 +73,10 @@ iot_topic = {
   subscriber = {
     name  = "SubscriberLambdaTest"
     topic = "iot/test/subscriber"
-  } 
+  }
 
   publisher = {
     name  = "PublisherLambdaTest"
-    topic = "iot/test/publisher" 
+    topic = "iot/test/publisher"
   }
 }
